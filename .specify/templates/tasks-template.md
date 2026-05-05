@@ -88,12 +88,12 @@ Examples of foundational tasks (adjust based on your project):
 
 ### Implementation for User Story 1
 
-- [ ] T012 [P] [US1] Create [Entity1] model in src/models/[entity1].py
-- [ ] T013 [P] [US1] Create [Entity2] model in src/models/[entity2].py
-- [ ] T014 [US1] Implement [Service] in src/services/[service].py (depends on T012, T013)
-- [ ] T015 [US1] Implement [endpoint/feature] in src/[location]/[file].py
-- [ ] T016 [US1] Add validation and error handling
-- [ ] T017 [US1] Add logging for user story 1 operations
+- [ ] T012 [P] [US1] Define Pydantic models for [Entity] in src/schemas/[entity].py
+- [ ] T013 [P] [US1] Implement LangGraph nodes for [Process] in src/agents/[process].py
+- [ ] T014 [US1] Implement [Service] in src/services/[service].py (async required)
+- [ ] T015 [US1] Implement optimistic UI update for [Action] in frontend/src/components/[file].tsx
+- [ ] T016 [US1] Add validation and error handling (Pydantic-based)
+- [ ] T017 [US1] Add tracing for agent state transitions
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 

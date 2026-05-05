@@ -75,6 +75,12 @@
 - What happens when [boundary condition]?
 - How does system handle [error scenario]?
 
+## Agentic Considerations *(mandatory)*
+
+- **Node Decomposition**: How will this feature be broken down into LangGraph nodes?
+- **State Management**: What specific state variables must be tracked across nodes?
+- **LLM Outputs**: What Pydantic models are needed for structured LLM responses?
+
 ## Requirements *(mandatory)*
 
 <!--

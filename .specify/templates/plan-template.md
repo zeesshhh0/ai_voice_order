@@ -31,7 +31,11 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] **Agentic-First**: Is AI logic decomposed into LangGraph nodes? (No monolithic prompts)
+- [ ] **Strict Typing**: Are Pydantic models defined for all LLM outputs and API contracts?
+- [ ] **Async-First**: Are all backend operations (I/O, LLM) asynchronous?
+- [ ] **Optimistic UI**: Does the frontend plan include optimistic state reconciliation?
+- [ ] **Traceability**: Is there a clear plan for tracing agent state transitions?
 
 ## Project Structure
 

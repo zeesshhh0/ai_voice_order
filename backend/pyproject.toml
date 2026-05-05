@@ -1,0 +1,23 @@
+[project]
+name = "ai-voice-order-backend"
+version = "0.1.0"
+description = "Backend for AI Voice Order System"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "langgraph",
+    "pydantic>=2.0",
+    "google-cloud-speech",
+    "sqlalchemy[asyncio]",
+    "asyncpg",
+    "python-multipart",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "pytest-asyncio",
+    "httpx",
+    "ruff",
+]

@@ -14,11 +14,11 @@ description: "Task list for Voice-to-Order AI System implementation"
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create backend project structure (api, agents, models, schemas, services)
-- [ ] T002 Initialize FastAPI project with LangGraph and Pydantic dependencies in backend/pyproject.toml
-- [ ] T003 Create frontend project structure (components, hooks, state)
-- [ ] T004 Initialize Next.js project with Tailwind and MediaRecorder hooks in frontend/package.json
-- [ ] T005 [P] Configure shared linting and formatting for Python and TypeScript
+- [x] T001 Create backend project structure (api, agents, models, schemas, services)
+- [x] T002 Initialize FastAPI project with LangGraph and Pydantic dependencies in backend/pyproject.toml
+- [x] T003 Create frontend project structure (components, hooks, state)
+- [x] T004 Initialize Next.js project with Tailwind and MediaRecorder hooks in frontend/package.json
+- [x] T005 [P] Configure shared linting and formatting for Python and TypeScript
 
 ---
 

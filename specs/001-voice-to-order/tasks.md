@@ -26,11 +26,11 @@ description: "Task list for Voice-to-Order AI System implementation"
 
 **Purpose**: Core infrastructure for Agentic nodes and Database connectivity
 
-- [ ] T006 Setup PostgreSQL database and SQLAlchemy asyncpg configuration in backend/src/services/database.py
-- [ ] T007 Define base SQLAlchemy models for Users, Sessions, and Orders in backend/src/models/
-- [ ] T008 Implement foundational LangGraph state definition in backend/src/agents/state.py
-- [ ] T009 [P] Configure Google Cloud STT service client in backend/src/services/stt_service.py
-- [ ] T010 [P] Setup basic FastAPI routing and error handling in backend/src/main.py
+- [x] T006 Setup PostgreSQL database and SQLAlchemy asyncpg configuration in backend/src/services/database.py
+- [x] T007 Define base SQLAlchemy models for Users, Sessions, and Orders in backend/src/models/
+- [x] T008 Implement foundational LangGraph state definition in backend/src/agents/state.py
+- [x] T009 [P] Configure Google Cloud STT service client in backend/src/services/stt_service.py
+- [x] T010 [P] Setup basic FastAPI routing and error handling in backend/src/main.py
 
 **Checkpoint**: Foundation ready - user story implementation can now begin
 

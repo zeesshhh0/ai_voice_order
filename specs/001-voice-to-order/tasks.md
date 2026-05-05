@@ -45,15 +45,18 @@ description: "Task list for Voice-to-Order AI System implementation"
 ### Implementation for User Story 1
 
 - [ ] T011 [P] [US1] Define Pydantic models for Order and Extraction in backend/src/schemas/order.py
-- [ ] T012 [P] [US1] Implement TranscriptionNode in backend/src/agents/nodes/transcription.py
+- [ ] T012 [P] [US1] Implement TranscriptionNode with confidence threshold logic in backend/src/agents/nodes/transcription.py
 - [ ] T013 [P] [US1] Implement IntentNode for "Place Order" detection in backend/src/agents/nodes/intent.py
 - [ ] T014 [P] [US1] Implement EntityExtractionNode in backend/src/agents/nodes/extraction.py
-- [ ] T015 [US1] Orchestrate Story 1 nodes into LangGraph in backend/src/agents/ordering_graph.py
+- [ ] T014b [P] [US1] Implement ContextNode for user history/restaurant retrieval in backend/src/agents/nodes/context.py
+- [ ] T015 [US1] Orchestrate Story 1 nodes (including Context and Validation) into LangGraph in backend/src/agents/ordering_graph.py
+- [ ] T015b [US1] Implement foundational ValidationNode in backend/src/agents/nodes/validation.py
 - [ ] T016 [US1] Create FastAPI endpoint for audio upload in backend/src/api/voice_endpoint.py
 - [ ] T017 [US1] Implement browser MediaRecorder hook in frontend/src/hooks/useVoiceCapture.ts
 - [ ] T018 [US1] Create VoiceRecordButton component in frontend/src/components/VoiceRecordButton.tsx
 - [ ] T019 [US1] Implement optimistic cart update in frontend/src/state/cartStore.ts
 - [ ] T020 [US1] Build CartSummary component in frontend/src/components/CartSummary.tsx
+- [ ] T020b [US1] Add "Please repeat" voice/UI feedback for low-confidence STT results
 
 **Checkpoint**: User Story 1 is functional (MVP Ready)
 
@@ -70,7 +73,7 @@ description: "Task list for Voice-to-Order AI System implementation"
 - [ ] T021 [P] [US2] Update Extraction Pydantic model with language indicators in backend/src/schemas/order.py
 - [ ] T022 [US2] Refine IntentNode prompt for mixed-language detection in backend/src/agents/nodes/intent.py
 - [ ] T023 [US2] Refine ExtractionNode prompt for non-English item extraction in backend/src/agents/nodes/extraction.py
-- [ ] T024 [US2] Implement language-aware validation in backend/src/agents/nodes/validation.py
+- [ ] T024 [US2] Refine ValidationNode for language-aware validation in backend/src/agents/nodes/validation.py
 
 **Checkpoint**: User Stories 1 and 2 work independently
 
@@ -88,6 +91,8 @@ description: "Task list for Voice-to-Order AI System implementation"
 - [ ] T026 [P] [US3] Implement IntentNode logic for "Modify Order" in backend/src/agents/nodes/intent.py
 - [ ] T027 [US3] Add "Clear Cart" state reconciliation in frontend/src/state/cartStore.ts
 - [ ] T028 [US3] Implement order status persistence in backend/src/services/order_service.py
+- [ ] T028b [FR-003] Implement IntentNode logic for "Reorder" and "Ask Menu"
+- [ ] T028c [FR-003] Add UI state/components to display menu items when "Ask Menu" is triggered
 
 ---
 
@@ -98,6 +103,8 @@ description: "Task list for Voice-to-Order AI System implementation"
 - [ ] T029 Implement LangGraph state tracing and logging in backend/src/agents/ordering_graph.py
 - [ ] T030 Add error reconciliation between Frontend and Backend in frontend/src/hooks/useVoiceCapture.ts
 - [ ] T031 Perform end-to-end latency validation against SC-003 (<3s)
+- [ ] T032 Benchmark user completion time for simple orders (SC-001 < 30s)
+- [ ] T033 Measure intent detection accuracy against standard ordering test set (SC-002 > 90%)
 
 ---
 

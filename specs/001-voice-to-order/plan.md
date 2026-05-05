@@ -1,6 +1,6 @@
 # Implementation Plan: Voice-to-Order AI System
 
-**Branch**: `001-voice-to-order` | **Date**: 2025-05-22 | **Spec**: specs/001-voice-to-order/spec.md
+**Branch**: `main` | **Date**: 2025-05-22 | **Spec**: specs/001-voice-to-order/spec.md
 
 ## Summary
 Build an end-to-end voice ordering system using Next.js (Frontend), FastAPI (Backend), LangGraph (Orchestration), and Google Cloud STT (Transcription). The system will process audio input to extract structured food orders with multi-language support.
@@ -17,15 +17,30 @@ Build an end-to-end voice ordering system using Next.js (Frontend), FastAPI (Bac
 
 ## Constitution Check
 
-- [ ] **Agentic-First**: AI logic decomposed into 5 LangGraph nodes (Transcription, Intent, Extraction, Context, Validation).
-- [ ] **Strict Typing**: Pydantic models used for all STT and LLM outputs.
-- [ ] **Async-First**: FastAPI and Asyncpg used for all I/O.
-- [ ] **Optimistic UI**: Next.js state management for immediate cart feedback.
-- [ ] **Traceability**: LangGraph state logging for each ordering session.
+*GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
+
+- [x] **Agentic-First**: AI logic decomposed into 5 LangGraph nodes (Transcription, Intent, Extraction, Context, Validation).
+- [x] **Strict Typing**: Pydantic models used for all STT and LLM outputs.
+- [x] **Async-First**: FastAPI and Asyncpg used for all I/O.
+- [x] **Optimistic UI**: Next.js state management for immediate cart feedback.
+- [x] **Traceability**: LangGraph state logging for each ordering session.
 
 ## Project Structure
 
-### Source Code
+### Documentation (this feature)
+
+```text
+specs/001-voice-to-order/
+├── plan.md              # This file
+├── research.md          # Tech decisions (STT, Pydantic, FastAPI)
+├── data-model.md        # PostgreSQL Schema & Entities
+├── quickstart.md        # Validation scenarios
+├── contracts/           # API v1 Definitions
+└── tasks.md             # Implementation tasks
+```
+
+### Source Code (repository root)
+
 ```text
 backend/
 ├── src/
